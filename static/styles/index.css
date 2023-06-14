@@ -2,22 +2,20 @@
     display: flex;
     flex-direction: column;
 }
-.text{
+.text {
     display: flex;
     flex-direction: row;
-    outline: blue dashed 1px;
     flex-wrap: wrap;
     margin-top: 60px;
 }
+
 .row, .cta {
     width: 50%;
 }
 h1 {
     margin-bottom: 1px;
 }
-.banner {
-    outline: red dashed 1px;
-}
+
 
 
 
@@ -38,7 +36,6 @@ h1 {
 .about {
     display: flex;
     flex-direction: column;
-    outline: green dashed 1px;
     width: 100%;
 
 }
@@ -51,4 +48,12 @@ h1 {
 .link {
     display: inline-block;
     margin-left: 10px;
+}
+.banner {
+    width: 50%;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
