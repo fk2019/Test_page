@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    outline: blue dashed 1px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.row, .cta {
+    width: 50%;
+}
+h1 {
+    margin-bottom: 1px;
+}
+.banner {
+    outline: red dashed 1px;
+}
+
+
+
+.cta > h1 {
+    font-size: 100px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.cta > h2 {
+    font-size: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+#about > .row {
+    width: 100%;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    outline: green dashed 1px;
+    width: 100%;
+
+}
+#about > .row {
+    width: 50%;
+}
+.contacts {
+    margin-bottom: 20px;
+}
+.link {
+    display: inline-block;
+    margin-left: 10px;
+}
