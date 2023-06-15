@@ -4,18 +4,17 @@
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"> </SCRIPT>
                 <TITLE>Star Wars Movie Guide</TITLE>
 
-                <LINK rel="shortcut icon" href="static/images/icon.png" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-                <LINK rel="stylesheet" href="static/styles/common.css"/>
-                <LINK rel="stylesheet" href="static/styles/header.css"/>
-                <LINK rel="stylesheet" href="static/styles/footer.css"/>
-                <LINK rel="stylesheet" href="static/styles/index.css"/>
+                <LINK rel="stylesheet" href="../static/styles/common.css?{{ cache_id }}"/>
+                <LINK rel="stylesheet" href="../static/styles/header.css?{{ cache_id }}"/>
+                <LINK rel="stylesheet" href="../static/styles/footer.css?{{ cache_id }}"/>
+                <LINK rel="stylesheet" href="../static/styles/index.css?cache_id={{ cache_id }}"/>
+                <SCRIPT SRC="../static/scripts/index.js?{{ cache_id }}"></SCRIPT>
         </HEAD>
   <BODY>
                 <HEADER>
 		  <DIV class="header_name">Star Wars Movie Guide</DIV>
 		  <A class="home" href="/">Home</A>
-		  <A class="films" href="movies">Films</A>
 		  <DIV class="features"><A href="">Features</A>
 		  <UL class="popover">
 		    <LI><A href="#movie_list">Movie list</A></LI>
@@ -24,8 +23,9 @@
 		  </UL>
 		  </DIV>
 		  <A class="resources" href="#about">About</A>
-		  <DIV class="sign"><A href="signup">Sign Up</A></DIV>
-		  <DIV class="login"><A href="login">Log In</A></DIV>
+<!--		  <DIV class="sign"><A href="signup">Sign Up</A></DIV>
+		  <DIV class="login"><A href="login">Log In</A></DIV> -->
+		  <BUTTON>Explore &gt;</BUTTON>
                 </HEADER>
                 <DIV class="container">
                   <SECTION class="text" id="cta">
@@ -36,7 +36,7 @@
 		      </H2>
 		      <!-- Start now button for create account -->
 		    </ARTICLE>
-		    <DIV class="banner"><img src="static/images/solo.jpeg"/></DIV>
+		    <DIV class="banner"><img src="../static/images/solo.jpeg"/></DIV>
                   </SECTION>
 		  <SECTION id="movie_list" class="text">
 		    <ARTICLE class="row">
@@ -47,7 +47,7 @@
 			Dive into the Star Wars universe with our comprehensive movie list. Each film is beautifully displayed, showcasing its title, release year, and a captivating poster image. Explore the galaxy by simply clicking on any movie for more details.
 		      </H2>
 		    </ARTICLE>
-		    <DIV class="banner"><img src="static/images/films.png"/></DIV>
+		    <DIV class="banner"><img src="../static/images/films.png"/></DIV>
 		  </SECTION>
 		  <SECTION id="movie_details" class="text">
 		    <ARTICLE class="row">
@@ -58,7 +58,7 @@
 			Uncover the secrets of each Star Wars film with our in-depth movie details. From the title, release year, and director, to the main characters, plot summary, and exciting insights, get a comprehensive overview of the storyline and key elements that make each movie memorable.
 		      </H2>
 		    </ARTICLE>
-		    <DIV class="banner"><img src="static/images/attack_clones.jpeg"/></DIV>
+		    <DIV class="banner"><img src="../static/images/attack_clones.jpeg"/></DIV>
 		  </SECTION>
 		  <SECTION id="characters" class="text">
 		    <ARTICLE class="row">
@@ -79,6 +79,7 @@
 		      <H2>
 			Create an account instantly and start immersing yourself in the Star Wars universe like never before.
 		      </H2>
+		      <BUTTON>Explore &gt;</BUTTON>
 		      <!-- Start Now button for create account -->
 		    </ARTICLE>
 		  </SECTION>
@@ -86,7 +87,7 @@
 		    <ARTICLE class="row">
 		      <H1>About</H1>
 		      <H3>
-		      <p>Star Wars Movie Guide is my portfolio project at <a href="https://www.alxafrica.com/">ALX</a>. I came up with this project
+		      <p>Star Wars Movie Guide is my portfolio project at <A =href="https://www.alxafrica.com/">ALX</A>. I came up with this project
 		      becuase I was inspired by the Star Wars Franchise. I mean, who doesn't like to explore the
 		      universe? Star Wars films are admired and watched by millions in our universe (and many more
 		      in other galaxies...far far away :)). Form weird beings to driods and clones, I was immersed

@@ -5,6 +5,10 @@ header {
     padding-top: 30px;
     margin-bottom: 80px;
     font-size: bold;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-items: center;
 }
 header > a, header > div {
     margin-right: 40px;
@@ -33,10 +37,12 @@ header > a, header > div {
     align-self: flex-start;
 
 }
+.features {
+    margin-left: -20px;
+}
 .features:hover .popover {
     display: flex;
     flex-direction: column;
-    margin-left: -20px;
     margin-top: 10px;
 }
 
@@ -57,12 +63,31 @@ li {
 }
 .login {
     margin-right: 30px;
+    align-self: center;
 }
 a {
-    color: white;
+    color: #ffe135;
     text-decoration: none;
     cursor: pointer;
 }
 a:hover {
     opacity: 50%;
+    color: #fffd37;
+}
+button {
+    margin-right: 30px;
+    margin-left: auto;
+    margin-bottom: auto;
+    background: #ffe135;
+    border-style: none;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    height: 25px;
+    color: #000;
+    cursor: pointer;
+
+}
+button:hover {
+    opacity: 90%;
 }
